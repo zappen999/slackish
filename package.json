@@ -1,6 +1,6 @@
 {
   "name": "slackish",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Task runner with slack integration",
   "main": "index.js",
   "scripts": {

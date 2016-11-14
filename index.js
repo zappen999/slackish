@@ -14,7 +14,8 @@ function post(opts) {
     return new Promise(function(resolve, reject) {
       // Setup default configuration
       const payload = Object.assign({}, opts, {
-        token: process.env.SLACK_TOKEN || opts.token
+        token: process.env.SLACK_TOKEN || opts.token,
+        icon_url: process.env.BOT_AVATAR || opts.icon_url
       });
 
       slack.chat.postMessage(payload, function(err, data) {
